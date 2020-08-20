@@ -22,6 +22,16 @@ a{
 .homepage__title{
     text-align: center;
 }
+.homepage__intro{
+    text-align: center;
+}
+.homepage__intro--dots{
+    color: transparent;
+}
+.homepage__intro--dots.is-active{
+    color: #36c336;
+}
+
 .metadata{
     color: gray;
     position: absolute;
