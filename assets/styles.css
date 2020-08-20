@@ -5,6 +5,14 @@ body{
     margin: 0;
     min-height: 100vh;
 }
+
+a{
+    color: black;
+    background-color: #36c336;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
 .content{
     display: flex;
     flex-direction: column;
@@ -14,9 +22,10 @@ body{
 .homepage__title{
     text-align: center;
 }
-.meta__date{
+.metadata{
     color: gray;
     position: absolute;
     bottom: 0px;
     right: 10px;
+    text-align: right;
 }
