@@ -1,7 +1,22 @@
 body{
     background-color: rgb(50, 50, 60);
-    color: darkgreen;
+    font-family: 'Open Sans', sans-serif;
+    color: #36c336;
+    margin: 0;
+    min-height: 100vh;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.homepage__title{
+    text-align: center;
 }
 .meta__date{
     color: gray;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
 }
