@@ -6,3 +6,7 @@ Simple site to display progression through the one year study in webdesign.
 * Site initiation
 * Created simple css and a fun little js interval to simulate a DOS terminal.
 * Created GIT repo, and made it public for teachers and other students to comment on my code.
+
+## 2020.09.14 ##
+* Started on obligatory assignment 1
+* Created link on homepage, and added some styling to it
