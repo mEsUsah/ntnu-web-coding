@@ -19,6 +19,13 @@ a{
     flex: 1;
 }
 
+.content nav ul{
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    font-weight: 600;
+}
+
 .homepage__title{
     text-align: center;
 }
