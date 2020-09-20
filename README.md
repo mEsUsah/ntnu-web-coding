@@ -10,3 +10,6 @@ Simple site to display progression through the one year study in webdesign.
 ## 2020.09.14 ##
 * Started on obligatory assignment 1
 * Created link on homepage, and added some styling to it
+
+## 2020.09.20 ##
+* Completed basic layout and styling og Obl1
