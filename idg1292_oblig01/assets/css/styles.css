@@ -20,12 +20,11 @@ main{
 }
 
 section{
-    margin-bottom: 50px;
+    margin: 25px 0 50px 0;
 }
 
 section p:first-child{
     margin-top: 0;
-    padding-top: 1em;
 }
 
 footer {
