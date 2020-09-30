@@ -16,3 +16,7 @@ Simple site to display progression through the one year study in webdesign.
 
 ## 2020.09.27 ##
 * Obl1 - Added details to the main page, resume page and portfolio page.
+
+## 2020.09.30 ##
+* Obl1 - Added some more styling to seperate content better.
+* Obl1 - Added svg logos for SoMe links

@@ -1,3 +1,10 @@
+/* ----- variables ------*/
+:root{
+    --color-main: #36c336;
+    --color-darker: #2a8f2a;
+    --color-accent: #F44336;
+    --color-transparent: #36c33680;
+}
 body{
     background-color: rgb(50, 50, 60);
     font-family: 'Open Sans', sans-serif;
@@ -28,7 +35,7 @@ section p:first-child{
 }
 
 footer {
-    background-color: #36c336;
+    background-color: var(--color-main);
     height: 100px;
     text-align: center;
     line-height: 20px;
@@ -38,11 +45,12 @@ footer {
 
 footer a{
     background-color: white;
-    color: #36c336;
+    color: var(--color-main);
     padding: 2px 12px;
     border-radius: 6px;
     text-decoration: none;
 }
+
 
 nav ul{
     padding: 0;
@@ -58,7 +66,7 @@ nav a, span {
     color: black;
     text-decoration: none;
     min-width: 200px;
-    background-color: #36c336;
+    background-color: var(--color-main);
     padding: 10px;
     border-radius: 6px;
     color: white;
@@ -66,20 +74,23 @@ nav a, span {
     letter-spacing: 1px;
     float: left;
 }
+nav a:hover{
+    background-color: var(--color-darker);
+}
 nav span{
-    background-color: #F44336;
+    background-color:var(--color-accent);
 }
 
 
 #header__title{
     text-align: center;
-    color: #36c336;
+    color: var(--color-main);
     letter-spacing: 1px;
     margin-top: 0;
 }
 
 .hero__image{
-    border: 2px solid #36c336;
+    border: 2px solid var(--color-main);
     max-width: 500px;
     margin: 0 auto;
     border-radius: 8px;
@@ -98,6 +109,54 @@ nav span{
     margin: 0 auto;
     display: block;
     max-width: 500px;
-    background-color: #36c33680;
+    background-color: var(--color-transparent);
     padding: 10px;
+}
+
+
+.portfolio__entry, .content__catergory{
+    border: 1px solid var(--color-main);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.portfolio__entry h3, .content__catergory h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+
+.logo__linkedin{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm-74.4 387h-62.3V199.4h62.3V387zm-31.2-213.2h-.4c-20.9 0-34.5-14.4-34.5-32.4 0-18.4 13.9-32.4 35.3-32.4s34.5 14 34.9 32.4c0 18-13.5 32.4-35.3 32.4zm256 213.2h-62.3V286.7c0-25.2-9-42.4-31.6-42.4-17.2 0-27.5 11.6-32 22.8-1.6 4-2.1 9.6-2.1 15.2V387h-62.3s.8-170 0-187.6h62.3V226c8.3-12.8 23.1-31 56.2-31 41 0 71.8 26.8 71.8 84.4V387z'/%3E%3C/svg%3E");
+}
+
+.logo__facebook{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 533.3 530.1'%3E%3Cpath fill='%23fff' d='M533.3 266.7C533.3 119.4 413.9 0 266.7 0 119.4 0 0 119.4 0 266.7c0 133.1 97.5 243.4 225 263.4V343.8h-67.7v-77.1H225v-58.8c0-66.8 39.8-103.8 100.7-103.8 29.2 0 59.7 5.2 59.7 5.2V175h-33.6c-33.1 0-43.5 20.6-43.5 41.6v50h74l-11.8 77.1h-62.1V530c127.4-19.9 224.9-130.2 224.9-263.3'/%3E%3C/svg%3E");
+}
+
+.logo__instagram{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' x='0' y='0' version='1.1' viewBox='0 0 533.3 533.3' xml:space='preserve'%3E%3Cstyle%3E.st0%7Bfill:%23fff%7D%3C/style%3E%3Cpath d='M266.7 0c-72.4 0-81.5.3-109.9 1.6C128.3 2.9 109 7.4 92 14c-17.5 6.8-32.4 15.9-47.2 30.8C29.9 59.6 20.8 74.5 14 92c-6.6 17-11.1 36.3-12.4 64.7C.3 185.2 0 194.2 0 266.7c0 72.4.3 81.5 1.6 109.9C2.9 405 7.4 424.4 14 441.3c6.8 17.5 15.9 32.4 30.8 47.2 14.8 14.8 29.7 23.9 47.2 30.8 17 6.6 36.3 11.1 64.7 12.4 28.4 1.3 37.5 1.6 109.9 1.6s81.5-.3 109.9-1.6c28.4-1.3 47.8-5.8 64.7-12.4 17.5-6.8 32.4-15.9 47.2-30.8 14.8-14.8 23.9-29.7 30.8-47.2 6.6-17 11.1-36.3 12.4-64.7 1.3-28.4 1.6-37.5 1.6-109.9s-.3-81.5-1.6-109.9c-1.3-28.4-5.8-47.8-12.4-64.7-6.8-17.5-15.9-32.4-30.8-47.2-14.8-14.8-29.7-23.9-47.2-30.8-17-6.6-36.3-11.1-64.7-12.4C348.2.3 339.1 0 266.7 0zm0 48c71.2 0 79.6.3 107.8 1.6 26 1.2 40.1 5.5 49.5 9.2 12.4 4.8 21.3 10.6 30.7 19.9 9.3 9.3 15.1 18.2 19.9 30.7 3.7 9.4 8 23.5 9.2 49.5 1.3 28.1 1.6 36.6 1.6 107.8s-.3 79.6-1.6 107.8c-1.2 26-5.5 40.1-9.2 49.5-4.8 12.4-10.6 21.3-19.9 30.7-9.3 9.3-18.2 15.1-30.7 19.9-9.4 3.7-23.5 8-49.5 9.2-28.1 1.3-36.5 1.6-107.8 1.6s-79.6-.3-107.8-1.6c-26-1.2-40.1-5.5-49.5-9.2-12.4-4.8-21.3-10.6-30.7-19.9-9.3-9.3-15.1-18.2-19.9-30.7-3.7-9.4-8-23.5-9.2-49.5-1.3-28.1-1.6-36.6-1.6-107.8s.3-79.6 1.6-107.8c1.2-26 5.5-40.1 9.2-49.5C63.6 97 69.4 88.1 78.7 78.7c9.3-9.3 18.2-15.1 30.7-19.9 9.4-3.7 23.5-8 49.5-9.2C187 48.3 195.5 48 266.7 48' class='st0'/%3E%3Cpath d='M266.7 355.6c-49.1 0-88.9-39.8-88.9-88.9 0-49.1 39.8-88.9 88.9-88.9 49.1 0 88.9 39.8 88.9 88.9 0 49.1-39.8 88.9-88.9 88.9zm0-225.9c-75.6 0-136.9 61.3-136.9 136.9 0 75.6 61.3 136.9 136.9 136.9 75.6 0 136.9-61.3 136.9-136.9 0-75.6-61.3-136.9-136.9-136.9m174.3-5.4c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32' class='st0'/%3E%3C/svg%3E");
+}
+
+.logo__github{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='octicon octicon-mark-github v-align-middle' viewBox='0 0 16 16' fill='white' version='1.1' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.some__link{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-main);
+    background-position-y: center;
+    background-position-x: 10px;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    padding: 10px 10px 10px 40px;
+    border-radius: 6px;
+    display: inline-block;
+    min-width: 82px;
+    margin-bottom: 4px;
+}
+.some__link:hover{
+    background-color: var(--color-darker);
 }
