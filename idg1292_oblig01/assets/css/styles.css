@@ -89,6 +89,10 @@ nav span{
     margin-top: 0;
 }
 
+.hero{
+    margin: 25px 0 50px 0;
+}
+
 .hero__image{
     border: 2px solid var(--color-main);
     max-width: 500px;

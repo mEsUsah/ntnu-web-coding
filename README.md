@@ -21,3 +21,6 @@ Simple site to display progression through the one year study in webdesign.
 * Obl1 - Added some more styling to seperate content better.
 * Obl1 - Added svg logos for SoMe links
 * Homepage - added css svg for github logo
+
+## 2020.10.01 ##
+* Obl1 - Final touches
